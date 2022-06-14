@@ -1,3 +1,6 @@
+clc
+clear
+close all
 A=20
 a=0.5
 x=-5:0.2:5;
@@ -10,25 +13,25 @@ for i=1:length(x)
 endfor
 % For Ae^an
 subplot(2,2,1)
-stem(x,y1,"r:diamond");
-title("Exponential Signal for Ae^at");
+stem(x,y1,"k");
+title("Exponential Signal for Ae^ an");
 xlabel("Discrete Time(n)");
 ylabel("Amplitude e1[n]");
 % For Ae^-an
 subplot(2,2,2)
-stem(x,y2,"bv");
-title("Exponential Signal for Ae^-at");
+stem(x,y2,"k");
+title("Exponential Signal for Ae^ -an");
 xlabel("Discrete Time(n)");
 ylabel("Amplitude e2[n]");
 % For -Ae^an
 subplot(2,2,3)
-stem(x,y3,"g");
-title("Exponential Signal for -Ae^at");
+stem(x,y3,"k");
+title("Exponential Signal for -Ae^ an");
 xlabel("Discrete Time(n)");
 ylabel("Amplitude e3[n]");
 % For -Ae^-an
 subplot(2,2,4)
-stem(x,y2,"mv");
-title("Exponential Signal for -Ae^-at");
+stem(x,y4,"k");
+title("Exponential Signal for -Ae^ -an");
 xlabel("Discrete Time(n)");
 ylabel("Amplitude e4[n]");

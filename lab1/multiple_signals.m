@@ -1,4 +1,4 @@
-x=-20:0.2:20;
+x=-20:0.5:20;
 y1=y2=y3=y4=zeros(1,length(x));
 for i=1:length(x)
   if x(i) > 0
@@ -20,7 +20,7 @@ for i=1:length(x)
 endfor
 %Unit Step
 subplot(2,2,1);
-stem(x,y1,"g");
+stem(x,y1,"k");
 axis([-20,20,-2,2]);
 title("Unit Step Signal");
 xlabel("Discrete Time(n)");
@@ -34,14 +34,14 @@ xlabel("Discrete Time(n)");
 ylabel("Amplitude d[n]");
 % Unit Ramp
 subplot(2,2,3);
-stem(x,y3,"b");
+stem(x,y3,"k");
 axis([-10,10,-10,10]);
 title("Unit Ramp Signal");
 xlabel("Discrete Time(n)");
 ylabel("Amplitude R[n]");
 % Sinc
 subplot(2,2,4);
-stem(x,y4,"r");
+stem(x,y4,"k");
 axis([-20,20,-2,2]);
 title("Sinc Signal");
 xlabel("Discrete Time(n)");
